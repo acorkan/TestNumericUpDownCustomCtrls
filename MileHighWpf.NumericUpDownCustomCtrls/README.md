@@ -29,13 +29,16 @@ You can see an example of implementation in a small demo application at the gith
 ### Quick Start
 * Create a WPF project and install the MileHighWpf.NumericUpDownCustomCtrls package.
 * In the main window XAML file add the XML namespace entry as **'numUpDn'** and inset these lines in the < Grid > section:
-**<numUpDn:FloatUpDownCtrl Name="upperLimit" Width="180" Grid.Row="0" Height="40" Visibility="Visible"
+```
+<numUpDn:FloatUpDownCtrl Name="upperLimit" Width="180" Grid.Row="0" Height="40" Visibility="Visible"
         Range="{Binding FRange, Mode=OneWay}"
                        Increment="{Binding Inc, Mode=OneWay}"
         Value="{Binding FValue, Mode=OneWayToSource}"/>
-<numUpDn:IntUpDownCtrl Name="lowerLimit" Width="180" Grid.Row="1" Height="40"**
+<numUpDn:IntUpDownCtrl Name="lowerLimit" Width="180" Grid.Row="1" Height="40"
+```
 * In the corresponding ViewModel implement the following properties (this example assumes you are using CommunityToolkit.Mvvm 8.4 or higher so adapt your binding mechanism according to your MVVM model):
-**public partial class MainViewModel : ObservableObject 
+```
+public partial class MainViewModel : ObservableObject 
  {
      #region testing numupdown
      public FloatUpDownRange FRange { get; } = new FloatUpDownRange(-1, 2000, 1, 0.15F);
@@ -43,7 +46,7 @@ You can see an example of implementation in a small demo application at the gith
      private float _fValue;
      partial void OnFValueChanged(float value)
      {
-         Trace.WriteLine(&#36;"OnFValueChanged {value}");
+         Trace.WriteLine($"OnFValueChanged {value}");
      }
      public float Inc { get => 1.5F; }
      public IntUpDownRange Range { get; } = new IntUpDownRange(-13, 2000, 10, 20);
@@ -51,10 +54,11 @@ You can see an example of implementation in a small demo application at the gith
      private int _value;
      partial void OnValueChanged(int value)
      {
-         Trace.WriteLine(&#36;"OnValueIChanged {value}");
+         Trace.WriteLine(\$"OnValueIChanged {value}");
      }
      #endregion testing numupdown
- }**
+ }
+ ```
  
 
 ## Feedback and Sample Usage
