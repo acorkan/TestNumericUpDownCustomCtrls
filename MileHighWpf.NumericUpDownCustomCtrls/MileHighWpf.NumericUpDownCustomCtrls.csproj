@@ -13,11 +13,14 @@
     <Copyright>Copyright (c) 2025 acorkan</Copyright>
     <RepositoryUrl>https://github.com/acorkan/TestNumericUpDownCustomCtrls</RepositoryUrl>
     <RepositoryType></RepositoryType>
-    <PackageTags>Numeric;UpDown;Control;.Net8</PackageTags>
+    <PackageTags>WPF;Numeric;UpDown;Control;.Net8</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <AnalysisLevel>latest</AnalysisLevel>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.1</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

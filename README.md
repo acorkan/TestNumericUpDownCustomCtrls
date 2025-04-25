@@ -1,4 +1,4 @@
-# MileHighWpf. Package
+# MileHighWpf.NumericUpDownCustomCtrls Package
 
 This was inspired by the on-line sample from Microsoft, but I wanted more functionality with both an Int32 version (IntUpDownCtrl) and a float version (FloatUpDownCtrl), mouse-wheel input, and the option to increase or decrease the value by x10. The internals of the control use double to hold values so when using the float version of the control there are no rounding errors over long spans of values.
 
