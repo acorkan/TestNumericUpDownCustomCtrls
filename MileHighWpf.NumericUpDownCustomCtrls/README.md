@@ -43,7 +43,7 @@ You can see an example of implementation in a small demo application at the gith
      private float _fValue;
      partial void OnFValueChanged(float value)
      {
-         Trace.WriteLine(\$"OnFValueChanged {value}");
+         Trace.WriteLine(&#36;"OnFValueChanged {value}");
      }
      public float Inc { get => 1.5F; }
      public IntUpDownRange Range { get; } = new IntUpDownRange(-13, 2000, 10, 20);
@@ -51,7 +51,7 @@ You can see an example of implementation in a small demo application at the gith
      private int _value;
      partial void OnValueChanged(int value)
      {
-         Trace.WriteLine(\$"OnValueIChanged {value}");
+         Trace.WriteLine(&#36;"OnValueIChanged {value}");
      }
      #endregion testing numupdown
  }**

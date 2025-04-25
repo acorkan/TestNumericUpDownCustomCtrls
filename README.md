@@ -35,6 +35,7 @@ You can see an example of implementation in a small demo application at the gith
         Value="{Binding FValue, Mode=OneWayToSource}"/>
 <numUpDn:IntUpDownCtrl Name="lowerLimit" Width="180" Grid.Row="1" Height="40"**
 * In the corresponding ViewModel implement the following properties (this example assumes you are using CommunityToolkit.Mvvm 8.4 or higher so adapt your binding mechanism according to your MVVM model):
+
 **public partial class MainViewModel : ObservableObject 
  {
      #region testing numupdown
@@ -43,7 +44,7 @@ You can see an example of implementation in a small demo application at the gith
      private float _fValue;
      partial void OnFValueChanged(float value)
      {
-         Trace.WriteLine(\$"OnFValueChanged {value}");
+         Trace.WriteLine(&#36;"OnFValueChanged {value}");
      }
      public float Inc { get => 1.5F; }
      public IntUpDownRange Range { get; } = new IntUpDownRange(-13, 2000, 10, 20);
@@ -51,7 +52,7 @@ You can see an example of implementation in a small demo application at the gith
      private int _value;
      partial void OnValueChanged(int value)
      {
-         Trace.WriteLine(\$"OnValueIChanged {value}");
+         Trace.WriteLine(&#36;"OnValueIChanged {value}");
      }
      #endregion testing numupdown
  }**
