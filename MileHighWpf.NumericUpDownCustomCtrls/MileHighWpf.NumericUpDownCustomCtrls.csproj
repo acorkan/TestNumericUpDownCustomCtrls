@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>WPF Numeric UpDown Control</Title>
+    <Authors>L. A. Corkan</Authors>
+    <Description>A numeric UpDown control for either float or int values.</Description>
+    <Copyright>Copyright (c) 2025 acorkan</Copyright>
+    <RepositoryUrl>https://github.com/acorkan/TestNumericUpDownCustomCtrls</RepositoryUrl>
+    <RepositoryType></RepositoryType>
+    <PackageTags>Numeric;UpDown;Control;.Net8</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <AnalysisLevel>latest</AnalysisLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,4 +1,4 @@
-﻿namespace NumericUpDownCustomCtrls
+﻿namespace MileHighWpf.NumericUpDownCustomCtrls
 {
     /// <summary>
     /// This class updates the Min and Max range for the integer Up/Down control.

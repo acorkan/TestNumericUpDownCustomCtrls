@@ -1,5 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using NumericUpDownCustomCtrls;
+using MileHighWpf.NumericUpDownCustomCtrls;
 using System.Diagnostics;
 
 namespace TestNumericUpDownCustomCtrls
@@ -25,6 +25,5 @@ namespace TestNumericUpDownCustomCtrls
             Trace.WriteLine($"OnValueIChanged {value}");
         }
         #endregion testing numupdown
-
     }
 }

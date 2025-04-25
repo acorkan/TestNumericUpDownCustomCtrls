@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Windows.Input;
 using System.Numerics;
 
-namespace NumericUpDownCustomCtrls
+namespace MileHighWpf.NumericUpDownCustomCtrls
 {
     /// <summary>
     /// This uses double as the backing field to allow for decimal values and avouid roundiong errors when T is float.
@@ -54,7 +54,7 @@ namespace NumericUpDownCustomCtrls
                           //new CoerceValueCallback(CoerceValueCallback)));
         public T Value
         {
-            get => (T)Convert.ChangeType(_value, typeof(T));// (T)GetValue(ValueProperty);
+            get => (T)Convert.ChangeType(_value, typeof(T));
             set
             {
                 SetValue(ValueProperty, value);

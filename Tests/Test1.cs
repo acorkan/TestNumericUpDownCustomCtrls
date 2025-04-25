@@ -1,4 +1,4 @@
-﻿using NumericUpDownCustomCtrls;
+﻿using MileHighWpf.NumericUpDownCustomCtrls;
 
 namespace Tests
 {

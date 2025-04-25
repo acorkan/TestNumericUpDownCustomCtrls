@@ -1,4 +1,4 @@
-﻿namespace NumericUpDownCustomCtrls
+﻿namespace MileHighWpf.NumericUpDownCustomCtrls
 {
     public sealed class FloatUpDownCtrl : UpDownCtrlBase<float, FloatUpDownRange>
     {

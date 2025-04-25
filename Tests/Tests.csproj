@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NumericUpDownCustomCtrls\NumericUpDownCustomCtrls.csproj" />
+    <ProjectReference Include="..\MileHighWpf.NumericUpDownCustomCtrls\MileHighWpf.NumericUpDownCustomCtrls.csproj" />
   </ItemGroup>
 
   <ItemGroup>
