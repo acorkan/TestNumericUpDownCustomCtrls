@@ -33,6 +33,7 @@
         /// </summary>
         protected override void UpdateFormatFromIncrement()
         { 
+            // Look like a float.
             string inc = ((float)_increment).ToString();
             SigDigits = inc.Contains('.') 
                 ? inc.Length - 1 - inc.IndexOf('.') 
@@ -40,8 +41,6 @@
             FormatString = (SigDigits == 0)
                 ? "F1"
                 : "F" + SigDigits.ToString();
-            //FormatString = "F" + SigDigits.ToString();
-
         }
         protected override string GetTextElementText(float value)
         { 
