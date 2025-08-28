@@ -11,10 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\MileHighWpf.NumericUpDownCustomCtrls\MileHighWpf.NumericUpDownCustomCtrls.csproj" />
+    <PackageReference Include="MileHighWpf.NumericUpDownCustomCtrls" Version="1.1.0" />
   </ItemGroup>
 
 </Project>
